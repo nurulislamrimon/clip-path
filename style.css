@@ -32,18 +32,3 @@ body > div {
   background: #000000;
   clip-path: circle();
 }
-
-.shape-2 {
-  background: #bb0000;
-  clip-path: circle(50px at 100px 100px);
-}
-
-.shape-3 {
-  background: #cc00aa;
-  clip-path: circle(50% at 0 0);
-}
-
-.shape-4 {
-  background: #ddaabb;
-  clip-path: circle(50% at bottom right);
-}
