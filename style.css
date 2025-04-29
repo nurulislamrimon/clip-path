@@ -9,24 +9,76 @@ body {
   width: 100%;
 }
 
-body > div {
-  height: 200px;
-  width: 200px;
-  background: #ebe9e9;
-
-  & > div {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.flex-center {
+section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 10px;
+
+  & > div {
+    height: 200px;
+    width: 200px;
+    background: #e2e2e2;
+    & > div {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
+
+/* basic */
+.shape-1 {
+  background: #000000;
+  clip-path: circle();
+}
+
+.shape-2 {
+  background: #bb0000;
+  clip-path: circle(50px at 100px 100px);
+}
+
+.shape-3 {
+  background: #cc00aa;
+  clip-path: circle(50% at 0 0);
+}
+
+.shape-4 {
+  background: #ddaabb;
+  clip-path: circle(50% at bottom right);
+}
+/* basic */
+
+/* shapes */
+
+.ellipse {
+  background: #000000;
+  clip-path: ellipse(70px 100px at 40% 40%);
+}
+
+.ellipse-center {
+  background: #0000aa;
+  clip-path: ellipse(80px 70px at center);
+}
+
+.inset {
+  background: #bb00bb;
+  clip-path: inset(20px);
+}
+
+.inset-multi-radius {
+  background: #ccaadd;
+  clip-path: inset(20px 10px 30px 10px round 20px 0);
+}
+/* shapes */
+
+/* polygon */
+.polygon {
+  background: #000000;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+/* polygon */
 
 .path {
   background: #000000;
