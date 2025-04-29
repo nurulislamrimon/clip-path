@@ -28,7 +28,12 @@ body > div {
   gap: 10px;
 }
 
-.shape-1 {
+.ellipse {
   background: #000000;
-  clip-path: circle();
+  clip-path: ellipse(70px 100px at 40% 40%);
+}
+
+.ellipse-center {
+  background: #0000aa;
+  clip-path: ellipse(80px 70px at center);
 }
