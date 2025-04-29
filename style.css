@@ -37,3 +37,13 @@ body > div {
   background: #0000aa;
   clip-path: ellipse(80px 70px at center);
 }
+
+.inset {
+  background: #bb00bb;
+  clip-path: inset(20px);
+}
+
+.inset-multi-radius {
+  background: #ccaadd;
+  clip-path: inset(20px 10px 30px 10px round 20px 0);
+}
