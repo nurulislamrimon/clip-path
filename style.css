@@ -1,15 +1,49 @@
-body {
-  height: 100vh;
-  width: 100vw;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body > div {
+  height: 200px;
+  width: 200px;
+  background: #ebe9e9;
+
+  & > div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-.shape {
-  height: 200px;
-  width: 200px;
-  background: #000;
+
+.shape-1 {
+  background: #000000;
   clip-path: circle();
+}
+
+.shape-2 {
+  background: #bb0000;
+  clip-path: circle(50px at 100px 100px);
+}
+
+.shape-3 {
+  background: #cc00aa;
+  clip-path: circle(50% at 0 0);
+}
+
+.shape-4 {
+  background: #ddaabb;
+  clip-path: circle(50% at bottom right);
 }
